@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É gringo ou BR?</title>
+</head>
+<body>
+    <h1>gringo ou BR</h1>
+    Onde mora: <input type="text" name="lugar" id="lugar">
+    <input type="button" value="Conferir" onclick="conferir()">
+    <div id="res"></div>
+
+    <script>
+        function conferir() {
+            var pais = document.getElementById('lugar')
+            var resu = document.getElementById('res')
+            if (pais === 'Brasil') {
+                resu.innerHTML += 'Vc é Brasileiro';
+            } else {
+                resu.innerHTML += 'Vc é gringo';
+            }
+        }
+
+    </script>
+</body>
+</html>
